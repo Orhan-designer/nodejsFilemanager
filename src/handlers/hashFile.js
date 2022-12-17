@@ -12,7 +12,6 @@ const hashFile = async (pathToFile) => {
     const readableStream = createReadStream(filePath);
 
     await pipeline(readableStream, hash.setEncoding("hex"), customOutput());
-
     currentDirectory();
   } catch (error) {
     console.log(error);

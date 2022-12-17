@@ -22,7 +22,6 @@ const compressFile = async (pathToFile, pathToDestination) => {
     currentDirectory();
   } catch (error) {
     console.log(error); 
-    
     console.log("Operation failed");
   }
 };

@@ -11,7 +11,6 @@ const addFile = async (newFilename) => {
     fileHandler = await open(pathToNewFile, "w");
 
     console.log(`File ${newFilename} was created`);
-
     currentDirectory();
   } catch (error) {
     console.log("Operation failed");

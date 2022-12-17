@@ -12,8 +12,6 @@ const args = Object.fromEntries(
     return [key, value];
   })
 );
-console.log(args);
-console.log(process.argv);
 
 const username = args["--username"] ? args["--username"] : "yankees";
 console.log(`Welcome to the File Manager, ${username}`);

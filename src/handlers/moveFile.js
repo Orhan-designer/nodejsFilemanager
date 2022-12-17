@@ -18,7 +18,6 @@ const moveFile = async (pathToFile, pathToNewDirectory) => {
     await unlink(filePath);
 
     console.log(`Initial file ${filePath} is deleted and moved to ${newDirectoryPath}`);
-
     currentDirectory();
   } catch (error) {
     console.log("Operation failed");

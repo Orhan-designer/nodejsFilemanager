@@ -15,7 +15,6 @@ const ls = async () => {
     });
 
     console.table(files);
-
     currentDirectory();
   } catch (error) {
     console.log("Operation failed");

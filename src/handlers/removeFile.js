@@ -8,7 +8,6 @@ const removeFile = async (pathToFile) => {
     await unlink(filePath);
 
     console.log(`File ${filePath} was deleted`);
-
     currentDirectory();
   } catch (error) {
     console.log("Operation failed");

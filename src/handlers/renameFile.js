@@ -11,7 +11,6 @@ const renameFile = async (pathToFile, newFileName) => {
     await rename(filePath, pathFromFile);
 
     console.log(`File was renamed to ${newFileName}`);
-
     currentDirectory();
   } catch (error) {
     console.log("Operation failed");
